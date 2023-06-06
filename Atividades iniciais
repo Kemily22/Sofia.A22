@@ -1,0 +1,21 @@
+//Programa em C
+// Receber um nome e imprimir as 4 primeiras letras do nome 
+#include <stdio.h> //biblioteca principal da main
+#include <stdlib.h> //chamando a biblioteca a lib
+int main()
+{
+  char nome[40]; // criando variavel do tipo stringer de tamango 40
+	int a; //variavel inteira que vai contar
+	
+	printf ("Informe seu nome: \n"); //mostrando na tela para o usuario informar o nome
+	gets (nome); //usando a gets para armazenar e receber a variavel nome
+	printf ("Imprimir as 4 primeiras letras\n"); // mostrando na tela essa msgm e pulando linha
+	for (a=0;a<=3;a++) //para a igual a 0, a menor igual a 3, a recebe a +1(contando)
+	printf ("%c ",nome[a]); // mostrando as 4 letra, por isso a mascara %c, pois é um caracter somente
+	printf ("\n"); //quebro linha
+	
+	system ("pause"); // usado para dar um pause e depois continuar
+	return 0;
+
+}
+//fim do codigo
